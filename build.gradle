@@ -9,6 +9,10 @@ repositories {
     mavenCentral()
 }
 
+compileTestJava {
+    options.encoding = 'UTF-8'
+}
+
 dependencies {
     testImplementation (
             'com.codeborne:selenide:5.21.0',
@@ -20,5 +24,8 @@ dependencies {
 }
 
 test {
+    systemProperty "chromeoptions.prefs", "intl.accept_languages=en"
+    //systemProperty "selenide.fastSetValue", "true"  //быстрый ввод данных, ломает некоторые тесты
+    //systemProperty "selenide.timeout", "6000" //увеличит ожидание до 6 сек
     useJUnitPlatform{}
 }

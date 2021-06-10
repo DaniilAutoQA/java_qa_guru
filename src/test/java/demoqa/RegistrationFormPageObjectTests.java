@@ -38,7 +38,7 @@ public class RegistrationFormPageObjectTests extends TestBase {
         registration.chooseGender(student.getGender());
         registration.inputMobile(student.getMobile());
         registration.uploadFile(student.getFileName());
-        registration.currentAddress(student.getCurrentaddress());
+        registration.currentAddress(student.getCurrentAddress());
         calendarComponent(calendar.getDay(),calendar.getMonth(),calendar.getYear());
         registration.chooseStateAndCity(student.getState(), student.getCity());
         registration.chooseHobby(student.getHobbies());
@@ -55,7 +55,7 @@ public class RegistrationFormPageObjectTests extends TestBase {
         $x("//td[text()='Subjects']").parent().shouldHave(text(student.getSubjects()));
         $x("//td[text()='Hobbies']").parent().shouldHave(text(student.getHobbies()));
         $x("//td[text()='Picture']").parent().shouldHave(text(student.getFileName()));
-        $x("//td[text()='Address']").parent().shouldHave(text(student.getCurrentaddress()));
+        $x("//td[text()='Address']").parent().shouldHave(text(student.getCurrentAddress()));
         $x("//td[text()='State and City']").parent().shouldHave(text(student.getState() + " " + student.getCity()));
 
     }

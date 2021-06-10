@@ -11,14 +11,14 @@ public class StudentModel {
     private String state;
     private String city;
     private String subjects;
-    private String currentaddress;
+    private String currentAddress;
     private String fileName;
 
     public StudentModel() {
     }
 
     public StudentModel(String firstName, String lastName, String email, String gender, String mobile,
-                        String hobbies, String state, String city, String subjects, String currentaddress, String fileName) {
+                        String hobbies, String state, String city, String subjects, String currentAddress, String fileName) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
@@ -28,7 +28,7 @@ public class StudentModel {
         this.state = state;
         this.city = city;
         this.subjects = subjects;
-        this.currentaddress = currentaddress;
+        this.currentAddress = currentAddress;
         this.fileName = fileName;
     }
 
@@ -120,12 +120,12 @@ public class StudentModel {
         this.subjects = subjects;
     }
 
-    public String getCurrentaddress() {
-        return currentaddress;
+    public String getCurrentAddress() {
+        return currentAddress;
     }
 
-    public void setCurrentaddress(String currentaddress) {
-        this.currentaddress = currentaddress;
+    public void setCurrentAddress(String currentAddress) {
+        this.currentAddress = currentAddress;
     }
 
 
